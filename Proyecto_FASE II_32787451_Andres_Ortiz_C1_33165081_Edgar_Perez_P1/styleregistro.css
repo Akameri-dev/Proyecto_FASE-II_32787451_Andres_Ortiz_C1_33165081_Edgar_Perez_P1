@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./images/hola2.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+.form-register {
+    background-image: url(); /* ¿Falta una imagen aquí? */
+    width: 400px;
+    background-color: #fd8003;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    font-family: Calibri, sans-serif; /* Añadí sans-serif como fallback */
+    color: white;
+    box-shadow: 10px 15px 40px #000;
+}
+
+.form-register h4 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.controls {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #f28b23;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #eb7b0c;
+    font-size: 16px;
+    font-family: Calibri, sans-serif; /* Añadí sans-serif como fallback */
+    color: white;
+}
+
+.form-register p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    height: 40px;
+}
+
+.form-register a {
+    color: white;
+    text-decoration: none;
+}
+
+.form-register a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.form-register .boton {
+    width: 100%;
+    background-color: #ffffff;
+    border: none;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    margin: 10px 0;
+    font-size: 16px;
+    cursor: pointer; /* Asegura que el cursor cambie a una mano */
+    border-radius: 6px; /* Añadí bordes redondeados para consistencia */
+}
+
+.form-register .boton:hover {
+    background-color: #f0f0f0; /* Cambia el color al pasar el mouse */
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Asegura que el modal esté por encima de otros elementos */
+}
+
+.modal-contenido {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 300px; /* Ancho reducido */
+    position: absolute;
+    top: 50%; /* Centrar verticalmente */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translate(-50%, -50%); /* Ajustar posición */
+}
+
+.modal-contenido h4 {
+    margin-bottom: 20px;
+    color: #000;
+}
+
+/* Estilos para el botón del modal */
+.boton-modal {
+    width: 100%;
+    background-color: #fd8003; /* Color naranja */
+    border: none;
+    padding: 10px;
+    color: white;
+    margin: 10px 0;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.boton-modal:hover {
+    background-color: #f28b23; /* Color naranja más oscuro al pasar el mouse */
+}
+
+/* Estilos para los mensajes de error y éxito */
+.mensaje-error {
+    display: none; /* Oculto por defecto */
+    background-color: #ff4d4d; /* Color de fondo rojo */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.mensaje-exito {
+    display: none; 
+    background-color: #eb7b0c ;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+

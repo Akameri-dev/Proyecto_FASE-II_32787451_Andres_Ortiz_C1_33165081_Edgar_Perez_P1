@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleregistro.css"> 
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Formulario Registro</title>
+</head>
+<body>
+    <section class="form-register">
+        <h4>Formulario de Registro</h4>
+        <form id="registroForm">
+            <input class="controls" type="text" name="Nombres" placeholder="Ingrese su Nombre">
+            <input class="controls" type="text" name="Apellidos" placeholder="Ingrese su Apellido">
+            <input class="controls" type="email" name="Correo" placeholder="Ingrese su Correo">
+            <input class="controls" type="password" name="Contraseña" placeholder="Ingrese su Contraseña">
+            <!-- Nuevo campo: Tipo de usuario -->
+            <select class="controls" name="TipoUsuario">
+                <option value="comprador">Comprador</option>
+                <option value="vendedor">Vendedor</option>
+            </select>
+            <button class="boton" type="submit" value="Registrar">Registrar</button>
+        </form>
+        <div id="mensajeError" class="mensaje-error"></div> <!-- Mensaje de error -->
+        <div id="mensajeExito" class="mensaje-exito"></div> <!-- Mensaje de éxito -->
+        <p><a href="INIlogin.html">¿Ya tienes cuenta?</a></p>
+    </section>
+
+    <!-- Modal para los datos de la tarjeta -->
+    <div id="modalTarjeta" class="modal">
+        <div class="modal-contenido">
+            <h4>Ingrese los datos de su tarjeta</h4>
+            <form id="formTarjeta">
+                <input class="controls" type="text" id="numeroTarjeta" placeholder="Número de tarjeta" required>
+                <select class="controls" id="tipoTarjeta" required>
+                    <option value="">Seleccione el tipo de tarjeta</option>
+                    <option value="credito">Crédito</option>
+                    <option value="debito">Débito</option>
+                </select>
+                <input class="controls" type="text" id="nombreTitular" placeholder="Nombre del titular" required>
+                <button class="boton-modal" type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

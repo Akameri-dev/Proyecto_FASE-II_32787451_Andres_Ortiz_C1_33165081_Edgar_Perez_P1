@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    }
+    
+        body {
+                background-image: url(./images/hola2.jpg);
+                background-attachment: fixed;
+                background-position: center center;
+                background-size: cover;
+                
+            }
+            
+    .form-register {
+         background-image: url();
+        width: 400px;
+        background-color: #fd8003;
+        padding: 30px;
+        margin: auto;
+        margin-top: 100px;
+        border-radius: 10px;
+        font-family: Calibri;
+        color: white;
+        box-shadow: 10px 15px 40px #000;
+    
+    }
+    
+    .form-register h4 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 25px;
+    }
+    
+    .controls {
+        width: 100%;
+        margin-bottom: 20px;
+        background-color: #f28b23;
+        padding: 12px;
+        border-radius: 6px;
+        margin-bottom: 20px;
+        border: 1px solid #eb7b0c;
+        font-size: 16px;
+        font-family: Calibri;
+        color: white;
+    }
+    
+     .form-register p {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 18px;
+        height: 40px;
+     }    
+    
+        .form-register a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+    
+        .form-register a:hover {
+            color: rgb(0, 0, 0);
+            text-decoration: underline rgb(0, 0, 0);
+        }
+    
+        .form-register .boton {
+            width: 100%;
+            background: none;
+            background-color: #ffffff;
+            border: none;
+            padding: 10px;
+            color: rgb(0, 0, 0);
+            margin: 10px 0;
+            font-size: 16px;
+        
+        } 

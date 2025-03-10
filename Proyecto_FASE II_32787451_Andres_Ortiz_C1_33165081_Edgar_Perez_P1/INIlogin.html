@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylelogin.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Inicio de Sesión</title>
+</head>
+<body>
+    <section class="form-register">
+        <h4>Inicio de Sesión</h4>
+        <form id="loginForm"> <!-- Añade un ID al formulario -->
+            <input class="controls" type="text" name="usuario" placeholder="Ingrese su Usuario" required>
+            <input class="controls" type="password" name="contraseña" placeholder="Ingrese su Contraseña" required>
+            <button class="boton" type="submit">Ingresar</button>
+        </form>
+        <div id="mensajeError" class="mensaje-error"></div> 
+        <p><a href="INIregistro.html">¿Aún no tienes Cuenta?</a></p>
+    </section>
+    <script src="script.js"></script> 
+</body>
+</html>

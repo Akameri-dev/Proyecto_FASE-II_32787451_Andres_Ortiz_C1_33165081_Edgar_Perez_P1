@@ -1,0 +1,115 @@
+*::after, 
+*::before,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    }
+
+    body {
+        background-image: url(./images/hola4.jpg);
+                background-attachment: fixed;
+                background-position: center center;
+                background-size: cover;
+    margin: 0 auto;
+    max-width: 1200px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #333;
+    }
+
+    .icon-cart {
+        width: 40px;
+        height: 40px;
+    }
+
+    .img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 20px 0 20px 0;
+
+    }
+
+
+    /* header */
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 30px 0 40px 0;
+        height: 100px;
+        width: 80%;
+    }
+
+    
+    /* main */
+    .container-items img {
+        max-width: 100%;
+        object-fit: cover;
+        border-radius: 20px 0 20px 0;
+       
+    }
+    .container-items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, fr);
+        gap: 25px;
+    }
+
+    .item{
+        border-radius: 10px;
+    }
+    .item:hover {
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .item img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
+        transition: all 0.5s;
+    }
+
+    .item figure {
+        overflow: hidden;
+    }
+
+    .item:hover img {
+        transform: scale(1.2);
+    }
+
+    
+    .Informacionproducto {
+        padding: 15px 30px;
+        line-height: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color:rgb(250, 198, 164)
+    }
+
+    .precio {
+        font-size: 20px;
+        font-weight: 800;
+    }
+
+    .Informacionproducto button {
+        border: none;
+        background: none;
+        background-color: #cc7115;
+        color: white;
+        padding: 10px 10px;
+            cursor: pointer;
+        }
+
+        .enlace-vendedor {
+            color: #ffffff; 
+            font-size: 18px; 
+            background-color: #cc7115; 
+            padding: 5px 10px; 
+            border-radius: 5px; 
+            text-decoration: none; 
+        }

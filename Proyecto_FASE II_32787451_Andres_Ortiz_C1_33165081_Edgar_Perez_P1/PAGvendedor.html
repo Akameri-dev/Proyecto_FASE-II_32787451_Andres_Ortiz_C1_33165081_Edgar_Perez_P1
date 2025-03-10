@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylevendedor.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Bienvenido a BynaryShop - Vendedor</title>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido, Vendedor</h1>
+        <button id="abrirModal">Añadir Producto</button>
+        <div>
+            <p><a href="PAGcomprador.html" class="enlace-comprador">Seguir como Comprador</a></p>
+        </div>
+    </header>
+
+    <div class="lista-productos">
+        <!-- Los productos agregados se mostrarán aquí -->
+    </div>
+
+    <div id="modalAnadir" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar-modal">&times;</span>
+            <h4>Añadir Producto</h4>
+            <form id="formAnadir">
+                <label for="nombreProducto">Nombre del Producto:</label>
+                <input type="text" id="nombreProducto" required>
+                <label for="precioProducto">Precio:</label>
+                <input type="number" id="precioProducto" min="0" required>
+                <label for="cantidadProducto">Cantidad Disponible:</label>
+                <input type="number" id="cantidadProducto" min="0" required>
+                <label for="imagenProducto">Imagen del Producto (URL):</label>
+                <input type="url" id="imagenProducto" required>
+                <button type="submit">Añadir</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="mensajeExito" class="mensaje-exito">
+        <p>¡Realizado con éxito!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
